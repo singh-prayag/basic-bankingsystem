@@ -1,0 +1,121 @@
+/* Sticky footer styles
+
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+*/ @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background: #DE6262;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #948cff, #2cd6ce);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #1131e2, #28f0e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+}
+.logo {
+  width: 30%;
+  margin-top: 40px;
+}
+
+h1{
+  font-family: 'Yomogi', cursive;
+  font-size: 400%;
+  margin: 5% 0;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+/* Custom page css
+    /* Not required for template or sticky footer method. */
+.container {
+  width: auto;
+  /* max-width: 680px; */
+  text-align: center;
+  padding: 0 15px;
+}
+.container .text-muted {
+  /* margin: 5px 0; */
+}
+img {
+  width: 300px;
+  height: 200px;
+}
+h4{
+  text-align: center;
+}
+
+@media screen and (min-width:1200px){
+  .form-signin {
+    width: 30%;
+    padding: 2%;
+    margin: 5% auto 10%;
+    background: whitesmoke;
+    border-radius: 50px;
+  }
+}
+
+@media screen and (max-width:1200px){
+  .form-signin{
+    width: 80%;
+    padding: 8%;
+    margin: 20px auto 100px auto;
+    background: whitesmoke;
+    border-radius: 50px;
+
+  
+  }
+  h1{
+    font-size: 40px;
+  }
+.logo{
+ 
+  width: 70%;
+}
+}
+
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2 ;
+}
+
+.form-signin input[type="text"]{
+  border-bottom-right-radius: 0 ;
+  border-bottom-left-radius: 0 ;
+}
+
+.form-signin input[type="email"] {
+  border-bottom-right-radius: 0 ;
+  border-bottom-left-radius: 0 ;
+  border-top-left-radius: 0 ;
+  border-top-right-radius: 0;
+}
+
+.form-signin input[type="number"] {
+  margin-bottom: 10px ;
+  border-top-left-radius: 0 ;
+  border-top-right-radius: 0;
+}
+
+h4 {
+  margin: 5% 0;
+}
+
+#floatingAmount{
+  border-radius: 5px;
+  border: 2px solid #f5f5f5;
+}
+

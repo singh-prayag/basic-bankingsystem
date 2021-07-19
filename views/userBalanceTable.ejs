@@ -1,0 +1,32 @@
+<h1>
+    Transfer Money
+</h1>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">S.no</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email id</th>
+        <th scope="col">Bank Balance</th>
+       </tr>
+    </thead>
+    <tbody>
+      <% for(var i=0;i<uData.length;i++){ %>
+        <tr>
+          <th scope="col">
+            <%=i+1%>
+          </th>
+          <th scope="col">
+            <%=uData[i].name %>
+          </th>
+          <th scope="col">
+            <%=uData[i].email %>
+          </th>
+          <th scope="col">
+            <%=uData[i].bal %>
+          </th>
+         </tr>
+        <% } %>
+    </tbody>
+  </table>

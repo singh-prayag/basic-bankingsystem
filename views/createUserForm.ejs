@@ -1,0 +1,61 @@
+<h1>Create User</h1>
+<main class="form-signin">
+  <form action="/cUser.ejs" method="POST">
+ <img
+        src="/photos/createUser.png"
+        alt="Blue vector created by vectorjuice - www.freepik.com"
+        style="width: 100%"
+    />
+
+    <div class="form-floating">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingName"
+        placeholder="example"
+        name="personName"
+        required
+      />
+      <label for="floatingName">Name</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="email"
+        class="form-control"
+        id="floatingEmail"
+        placeholder="name@example.com"
+        name="personEmail"
+        autocomplete="off"
+        required
+      />
+      <label for="floatingEmail">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="number"
+        class="form-control"
+        id="floatingBalance"
+        placeholder="number"
+        name="personBalance"
+        autocomplete="off"
+        required
+      />
+      <label for="floatingBalance">Balance</label>
+    </div>
+
+    <div class="checkbox mb-3" style="text-align: center;">
+      <label>
+        <input type="checkbox" id="checkbox" required /> Remember me
+      </label>
+    </div>
+    <button
+      class="w-100 btn btn-lg btn-primary"
+      type="submit"
+      id="createUserButton"
+      onclick="sweetalertclick()"
+      value="submit"
+    >
+      Create
+    </button>
+  </form>
+</main>

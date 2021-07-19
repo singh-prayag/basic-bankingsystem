@@ -1,0 +1,51 @@
+<main class="form-signin">
+    <form action="/tmoney.ejs" method="POST">
+     
+      
+      <div class="select">
+        <h4>Transfer From </h4>
+        <select class="form-select" aria-label="Default select example" name="tFrom" id="tFrom"  required>
+          <option selected></option>
+          <%for (var i=0;i<keyData.length;i++){%>
+            <option><%= keyData[i].email %></option>
+         <% } %>
+        </select>
+      </div>
+      <div class="select">
+        <h4>Transfer to </h4>
+        <select class="form-select" aria-label="Default select example" name="tTo" id="tTo" required>
+          <option selected></option>
+          <%for (var i=0;i<keyData.length;i++){%>
+            <option><%= keyData[i].email %></option>
+         <% } %>
+        </select>
+      </div>
+      <h4>Transferable Amount</h4>
+      <div class="form-floating">
+                  <input
+          type="number"
+          class="form-control"
+          id="floatingAmount"
+          placeholder="number"
+          name="personAmount"
+          required
+        />
+        <label for="floatingAmount">Amount</label>
+      </div>
+      <div class="checkbox mb-3" style="text-align: center;margin: 5% 0;">
+        <label >
+          <input type="checkbox" id="checkboxTransaction"  required /> I agree with this transaction
+        </label>
+      </div>
+      <button
+        class="w-100 btn btn-lg btn-primary"
+        type="submit"
+        onclick="sweetalertclick2()"
+        id="sendButton"
+        
+      >
+        Send Money
+      </button>
+     
+    </form>
+  </main>
